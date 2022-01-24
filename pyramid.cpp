@@ -22,7 +22,5 @@ int main(int argc,char *argv[])
             cout << "*";
         }
         cout << "\n";
-
-        
     }   
 }
