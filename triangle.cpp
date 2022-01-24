@@ -1,5 +1,5 @@
 /*
-Ibrahim Maash
+Ibrahim Maashi
 CS1233
 */
 
@@ -20,6 +20,4 @@ int main(int argc,char *argv[])
         } 
         cout << '\n';
     }
-    
-    
 }
