@@ -1,5 +1,5 @@
 /*
-Ibrahim Maash
+Ibrahim Maashi
 CS1233
 */
 #include <iomanip>
