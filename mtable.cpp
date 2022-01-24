@@ -9,13 +9,18 @@ using namespace std;
 
 int main(int argc,char *argv[])
 {
+    string op="x";
+    if (argc>3)
+    {
+        op=argv[3];
+    }
     int row=stoi(argv[1]);
     int col=stoi(argv[2]);
     for (int i=0;i<=row;i++)
     {
         if (i==0)
         {
-            cout << " X|";
+            cout <<op<<" |";
             for (int j=1;j<=col;j++)
             {
                 cout << setw(4)<<right<<j;
@@ -31,7 +36,38 @@ int main(int argc,char *argv[])
         cout << setw(2)<<right<<i<<"|";
         for (int j=1;j<=col;j++)
         {
-            cout << setw(4)<<right<<i*j;
+            if (op=="x")
+            {
+                cout << setw(4)<<right<<(i * j);
+            }
+            else if (op=="-")
+            {
+                cout << setw(4)<<right<<(i - j);
+            }
+            else if (op=="+")
+            {
+                cout << setw(4)<<right<<(i + j);
+            }
+            else if (op=="/")
+            {
+                cout << setw(4)<<right<< (i / j);
+            }
+            else if (op=="%")
+            {
+                cout << setw(4)<<right<<(i % j);
+            }
+            else if (op=="|")
+            {
+                cout << setw(4)<<right<<(i | j);
+            }
+            else if (op=="^")
+            {
+                cout << setw(4)<<right<<(i ^ j);
+            }
+            else if (op=="&")
+            {
+                cout << setw(4)<<right<<(i & j);
+            }
         }
         cout<<"\n";
             
