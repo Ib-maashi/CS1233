@@ -16,7 +16,8 @@ int main(int argc,char *argv[])
     }
     for (int i=0;i<num;i++)
     {
-        cout << setw(num-i)<< right;
+
+        cout << setw(num-i)<< right; //adds the spaces without using a for loop
         for (int j=0;j<i*2+1;j++)
         {
             cout << "*";

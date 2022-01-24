@@ -7,29 +7,18 @@ CS1233
 using namespace std;
 int main(int argc,char *argv[])
 {
-    
-    if (argc==2)
+    int num=8;
+    if (argc>1)
     {
-        
-        for (int i = 0; i < stoi(argv[1]); i++) 
-        {
-            for (int j = 0; j <= i; j++)
-            {
-                cout << '*';
-            } 
-            cout << '\n';
-        }
+        num=stoi(argv[1]);
     }
-    else
+    for (int i = 0; i < num; i++) 
     {
-        for (int i = 0; i < 8; i++) 
+        for (int j = 0; j <= i; j++)
         {
-            for (int j = 0; j <= i; j++)
-            {
-                cout << '*';
-            } 
-            cout << '\n';
-        }
+            cout << '*';
+        } 
+        cout << '\n';
     }
     
     
