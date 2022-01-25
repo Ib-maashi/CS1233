@@ -9,65 +9,72 @@ using namespace std;
 
 int main(int argc,char *argv[])
 {
-    string op="x";
+    char op='x';
     if (argc>3)
     {
-        op=argv[3];
+        op=argv[3][0];
     }
     int row=stoi(argv[1]);
     int col=stoi(argv[2]);
-    for (int i=0;i<=row;i++)
+
+    cout <<" "<<op<<"|";
+    for (int j=1;j<=col;j++)
     {
-        if (i==0)
-        {
-            cout <<op<<" |";
-            for (int j=1;j<=col;j++)
-            {
-                cout << setw(4)<<right<<j;
-            }
-            cout<<"\n";
-            for (int j=0;j<=col*5+3;j++)
-            {
-                cout <<"-";
-            }
-            cout<<"\n";
-            continue;
-        }
+        cout << setw(4)<<right<<j;
+    }
+    cout<<"\n";
+    for (int j=0;j<=col*5+3;j++)
+    {
+        cout <<"-";
+    } 
+    cout<<"\n";
+    for (int i=1;i<=row;i++)
+    {
         cout << setw(2)<<right<<i<<"|";
         for (int j=1;j<=col;j++)
         {
-            if (op=="x")
+            switch (op)
             {
+            case 'x':
                 cout << setw(4)<<right<<(i * j);
-            }
-            else if (op=="-")
-            {
+                break;
+            
+            case '-':
+
                 cout << setw(4)<<right<<(i - j);
-            }
-            else if (op=="+")
-            {
+                break;
+            
+            case '+':
+            
                 cout << setw(4)<<right<<(i + j);
-            }
-            else if (op=="/")
-            {
+                break;
+            
+            case '/':
+            
                 cout << setw(4)<<right<< (i / j);
-            }
-            else if (op=="%")
-            {
+                break;
+            
+            case '%':
+            
                 cout << setw(4)<<right<<(i % j);
-            }
-            else if (op=="|")
-            {
+                break;
+            
+            case '|':
+            
                 cout << setw(4)<<right<<(i | j);
-            }
-            else if (op=="^")
-            {
+                break;
+            
+            case '^':
+            
                 cout << setw(4)<<right<<(i ^ j);
-            }
-            else if (op=="&")
-            {
+                break;
+            
+            case '&':
+            
                 cout << setw(4)<<right<<(i & j);
+                break;
             }
+            
         }
         cout<<"\n";
             
