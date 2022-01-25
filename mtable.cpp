@@ -16,7 +16,6 @@ int main(int argc,char *argv[])
     }
     int row=stoi(argv[1]);
     int col=stoi(argv[2]);
-
     cout <<" "<<op<<"|";
     for (int j=1;j<=col;j++)
     {
