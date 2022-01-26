@@ -37,45 +37,29 @@ int main(int argc,char *argv[])
             case 'x':
                 cout << setw(4)<<right<<(i * j);
                 break;
-            
             case '-':
-
                 cout << setw(4)<<right<<(i - j);
                 break;
-            
             case '+':
-            
                 cout << setw(4)<<right<<(i + j);
                 break;
-            
             case '/':
-            
                 cout << setw(4)<<right<< (i / j);
                 break;
-            
             case '%':
-            
                 cout << setw(4)<<right<<(i % j);
                 break;
-            
             case '|':
-            
                 cout << setw(4)<<right<<(i | j);
                 break;
-            
             case '^':
-            
                 cout << setw(4)<<right<<(i ^ j);
                 break;
-            
             case '&':
-            
                 cout << setw(4)<<right<<(i & j);
                 break;
             }
-            
         }
-        cout<<"\n";
-            
+        cout<<"\n";   
     }
 }
