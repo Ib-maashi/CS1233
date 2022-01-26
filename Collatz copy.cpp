@@ -47,5 +47,5 @@ int main(int argc,char *argv[])
             longest_seq=curr_max;
         }
     }
-    cout<<"Maximum Collatz Sequence length between "<<min<< " and " << max <<" is "<<longest_seq<<".";
+    cout<<"Maximum Collatz Sequence length between "<<min<< " and " << 20 <<" is "<<longest_seq<<".";
 }
